@@ -6,7 +6,8 @@ def home(request):
 
 
 def about(request):
-    return render(request, "about.html", {})
+    my_name = "Hola, mi nombre es Jose Palmer"
+    return render(request, "about.html", {"my_name": my_name})
 
 
 def contact(request):
